@@ -29,7 +29,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CircleShape2D" id=6]
-radius = 16.0
+radius = 32.0
 
 [sub_resource type="Animation" id=7]
 resource_name = "LevelStart"
@@ -106,8 +106,9 @@ collision_layer = 16
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-rotation = 4.2005
+rotation = 5.61348
 frames = SubResource( 5 )
+frame = 4
 speed_scale = 2.0
 playing = true
 

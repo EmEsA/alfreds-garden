@@ -1,0 +1,743 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://assets/environment.png" type="Texture" id=1]
+[ext_resource path="res://src/Actors/Cat.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Theme.tres" type="Theme" id=3]
+[ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/Levels/Level09.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Objects/Trampoline green.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/Objects/Trampoline blue.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/Objects/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/Objects/Trampoline yellow.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/Objects/Fish.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/Objects/Trampoline red.tscn" type="PackedScene" id=11]
+
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="TileSet" id=12]
+0/name = "grass"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "grass right cliff"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 64, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "grass left cliff"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 128, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 5 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "ground"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 64, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 6 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "ground right cliff"
+4/texture = ExtResource( 1 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 64, 64, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 7 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "ground left cliff"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 128, 64, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 8 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "ground down cliff"
+6/texture = ExtResource( 1 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 128, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 9 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "ground down right cliff"
+7/texture = ExtResource( 1 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 64, 128, 64, 64 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 10 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "ground down left cliff"
+8/texture = ExtResource( 1 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 128, 128, 64, 64 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 11 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "bush blue berries"
+9/texture = ExtResource( 1 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 192, 128, 64 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "bush red berries"
+10/texture = ExtResource( 1 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 128, 192, 128, 64 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "tree leaves"
+11/texture = ExtResource( 1 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 256, 0, 256, 512 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "tree needles"
+12/texture = ExtResource( 1 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 512, 0, 256, 512 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "grass down left cliff"
+13/texture = ExtResource( 1 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 192, 0, 64, 64 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape = SubResource( 3 )
+13/shape_one_way = false
+13/shape_one_way_margin = 1.0
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+13/z_index = 0
+14/name = "grass down right cliff"
+14/texture = ExtResource( 1 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 192, 64, 64, 64 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape = SubResource( 4 )
+14/shape_one_way = false
+14/shape_one_way_margin = 1.0
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+14/z_index = 0
+
+[node name="Level08" type="Node2D"]
+
+[node name="UserInterface" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="UserInterface" parent="UserInterface" instance=ExtResource( 8 )]
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="Background"]
+margin_right = 1280.0
+margin_bottom = 720.0
+color = Color( 0.643137, 0.909804, 0.964706, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 64, 0 )
+tile_set = SubResource( 12 )
+cell_quadrant_size = 1
+collision_friction = 0.0
+collision_bounce = 1.0
+collision_layer = 4
+format = 1
+tile_data = PoolIntArray( -4390913, 3, 0, -4456448, 6, 0, -4456447, 6, 0, -4456446, 6, 0, -4456445, 6, 0, -4456444, 6, 0, -4456443, 6, 0, -4456442, 6, 0, -4456441, 6, 0, -4456440, 6, 0, -4456439, 6, 0, -4456438, 6, 0, -4456437, 6, 0, -4456436, 6, 0, -4456435, 6, 0, -4456434, 6, 0, -4456433, 6, 0, -4456432, 6, 0, -4456431, 6, 0, -4456430, 6, 0, -4456429, 6, 0, -4456428, 6, 0, -4456427, 6, 0, -4456426, 6, 0, -4456425, 6, 0, -4456424, 6, 0, -4456423, 6, 0, -4456422, 6, 0, -4456421, 6, 0, -4456420, 6, 0, -4456419, 6, 0, -4456418, 6, 0, -4456417, 6, 0, -4456416, 6, 0, -4456415, 6, 0, -4456414, 6, 0, -4456413, 6, 0, -4456412, 6, 0, -4456411, 6, 0, -4456410, 6, 0, -4456409, 6, 0, -4456408, 6, 0, -4456407, 6, 0, -4456406, 6, 0, -4456405, 6, 0, -4456404, 6, 0, -4456403, 6, 0, -4456402, 6, 0, -4456401, 6, 0, -4456400, 6, 0, -4456399, 6, 0, -4456398, 6, 0, -4456397, 6, 0, -4456396, 6, 0, -4456395, 6, 0, -4456394, 6, 0, -4456393, 6, 0, -4456392, 6, 0, -4456391, 6, 0, -4456390, 6, 0, -4456389, 6, 0, -4456388, 6, 0, -4456387, 6, 0, -4456386, 6, 0, -4456385, 6, 0, -4456384, 6, 0, -4456383, 6, 0, -4456382, 6, 0, -4456381, 6, 0, -4456380, 6, 0, -4456379, 6, 0, -4456378, 6, 0, -4456377, 6, 0, -4456376, 6, 0, -4456375, 6, 0, -4456374, 6, 0, -4456373, 3, 0, -4325377, 4, 0, -4390837, 5, 0, -4259841, 4, 0, -4325301, 5, 0, -4194305, 4, 0, -4259765, 5, 0, -4128769, 4, 0, -4194229, 5, 0, -4063233, 4, 0, -4128693, 5, 0, -3997697, 4, 0, -4063157, 5, 0, -3932161, 4, 0, -3997621, 5, 0, -3866625, 4, 0, -3932085, 5, 0, -3801089, 4, 0, -3866549, 5, 0, -3735553, 4, 0, -3801013, 5, 0, -3670017, 4, 0, -3735477, 5, 0, -3604481, 4, 0, -3669941, 5, 0, -3538945, 4, 0, -3604405, 5, 0, -3473409, 4, 0, -3538869, 5, 0, -3407873, 4, 0, -3473333, 5, 0, -3342337, 4, 0, -3407869, 13, 0, -3407868, 14, 0, -3407863, 13, 0, -3407862, 14, 0, -3407857, 13, 0, -3407856, 14, 0, -3407851, 13, 0, -3407850, 14, 0, -3407845, 13, 0, -3407844, 14, 0, -3407839, 2, 0, -3407838, 1, 0, -3407832, 2, 0, -3407831, 1, 0, -3407797, 5, 0, -3276801, 4, 0, -3342303, 5, 0, -3342302, 4, 0, -3342296, 5, 0, -3342295, 4, 0, -3342261, 5, 0, -3211265, 4, 0, -3276767, 5, 0, -3276766, 4, 0, -3276760, 5, 0, -3276759, 4, 0, -3276753, 13, 0, -3276752, 14, 0, -3276725, 5, 0, -3145729, 4, 0, -3211231, 5, 0, -3211230, 4, 0, -3211224, 5, 0, -3211223, 4, 0, -3211189, 5, 0, -3080193, 4, 0, -3145695, 5, 0, -3145694, 4, 0, -3145688, 5, 0, -3145687, 4, 0, -3145672, 13, 0, -3145671, 14, 0, -3145653, 5, 0, -3014657, 4, 0, -3080159, 5, 0, -3080158, 4, 0, -3080152, 5, 0, -3080151, 4, 0, -3080117, 5, 0, -2949121, 4, 0, -3014623, 5, 0, -3014622, 4, 0, -3014616, 5, 0, -3014615, 4, 0, -3014581, 5, 0, -2883585, 4, 0, -2949087, 8, 0, -2949086, 7, 0, -2949080, 8, 0, -2949079, 7, 0, -2949053, 2, 0, -2949052, 1, 0, -2949045, 5, 0, -2818049, 4, 0, -2883517, 5, 0, -2883516, 4, 0, -2883509, 5, 0, -2752513, 4, 0, -2817981, 5, 0, -2817980, 4, 0, -2817973, 5, 0, -2686977, 4, 0, -2752503, 13, 0, -2752502, 14, 0, -2752445, 5, 0, -2752444, 4, 0, -2752437, 5, 0, -2621441, 4, 0, -2686958, 13, 0, -2686957, 14, 0, -2686953, 13, 0, -2686952, 14, 0, -2686909, 5, 0, -2686908, 4, 0, -2686901, 5, 0, -2555905, 4, 0, -2621373, 5, 0, -2621372, 4, 0, -2621365, 5, 0, -2490369, 4, 0, -2555837, 5, 0, -2555836, 4, 0, -2555829, 5, 0, -2424833, 4, 0, -2490338, 13, 0, -2490337, 14, 0, -2490301, 5, 0, -2490300, 4, 0, -2490293, 5, 0, -2359297, 4, 0, -2424765, 5, 0, -2424764, 4, 0, -2424757, 5, 0, -2293761, 4, 0, -2359260, 13, 0, -2359259, 14, 0, -2359229, 5, 0, -2359228, 4, 0, -2359221, 5, 0, -2228225, 4, 0, -2293693, 5, 0, -2293692, 4, 0, -2293685, 5, 0, -2162689, 4, 0, -2228157, 5, 0, -2228156, 4, 0, -2228149, 5, 0, -2097153, 4, 0, -2162621, 5, 0, -2162620, 4, 0, -2162613, 5, 0, -2031617, 4, 0, -2097146, 13, 0, -2097145, 14, 0, -2097140, 13, 0, -2097139, 14, 0, -2097134, 13, 0, -2097133, 14, 0, -2097085, 5, 0, -2097084, 4, 0, -2097077, 5, 0, -1966081, 4, 0, -2031549, 5, 0, -2031548, 4, 0, -2031541, 5, 0, -1900545, 4, 0, -1966025, 12, 0, -1966023, 12, 0, -1966020, 12, 0, -1966019, 12, 0, -1966018, 12, 0, -1966013, 5, 0, -1966012, 4, 0, -1966005, 5, 0, -1835009, 4, 0, -1900492, 12, 0, -1900486, 12, 0, -1900484, 12, 0, -1900477, 5, 0, -1900476, 4, 0, -1900469, 5, 0, -1769473, 4, 0, -1834941, 5, 0, -1834940, 4, 0, -1834933, 5, 0, -1703937, 4, 0, -1769405, 5, 0, -1769404, 4, 0, -1769397, 5, 0, -1638401, 4, 0, -1703869, 5, 0, -1703868, 4, 0, -1703861, 5, 0, -1572865, 4, 0, -1638333, 5, 0, -1638332, 4, 0, -1638325, 5, 0, -1507329, 4, 0, -1572797, 5, 0, -1572796, 4, 0, -1572789, 5, 0, -1441793, 4, 0, -1507281, 10, 0, -1507275, 9, 0, -1507274, 9, 0, -1507270, 10, 0, -1507269, 10, 0, -1507268, 10, 0, -1507264, 10, 0, -1507261, 5, 0, -1507260, 4, 0, -1507253, 5, 0, -1376257, 4, 0, -1441750, 2, 0, -1441749, 0, 0, -1441748, 0, 0, -1441747, 0, 0, -1441746, 0, 0, -1441745, 0, 0, -1441744, 0, 0, -1441743, 0, 0, -1441742, 0, 0, -1441741, 0, 0, -1441740, 0, 0, -1441739, 0, 0, -1441738, 0, 0, -1441737, 0, 0, -1441736, 0, 0, -1441735, 0, 0, -1441734, 0, 0, -1441733, 0, 0, -1441732, 0, 0, -1441731, 0, 0, -1441730, 0, 0, -1441729, 0, 0, -1441728, 0, 0, -1441727, 0, 0, -1441726, 0, 0, -1441725, 3, 0, -1441724, 4, 0, -1441717, 5, 0, -1310721, 4, 0, -1376234, 13, 0, -1376233, 14, 0, -1376214, 8, 0, -1376213, 6, 0, -1376212, 6, 0, -1376211, 6, 0, -1376210, 6, 0, -1376209, 6, 0, -1376208, 6, 0, -1376207, 6, 0, -1376206, 6, 0, -1376205, 6, 0, -1376204, 6, 0, -1376203, 6, 0, -1376202, 6, 0, -1376201, 6, 0, -1376200, 6, 0, -1376199, 6, 0, -1376198, 6, 0, -1376197, 6, 0, -1376196, 6, 0, -1376195, 6, 0, -1376194, 6, 0, -1376193, 6, 0, -1376192, 6, 0, -1376191, 6, 0, -1376190, 6, 0, -1376189, 3, 0, -1376188, 4, 0, -1376181, 5, 0, -1245185, 4, 0, -1310653, 5, 0, -1310652, 4, 0, -1310645, 5, 0, -1179649, 4, 0, -1245117, 5, 0, -1245116, 4, 0, -1245109, 5, 0, -1114113, 4, 0, -1179636, 13, 0, -1179635, 14, 0, -1179581, 5, 0, -1179580, 4, 0, -1179573, 5, 0, -1048577, 4, 0, -1114045, 5, 0, -1114044, 4, 0, -1114037, 5, 0, -983041, 4, 0, -1048509, 5, 0, -1048508, 4, 0, -1048501, 5, 0, -917505, 4, 0, -983002, 13, 0, -983001, 14, 0, -982973, 5, 0, -982972, 4, 0, -982965, 5, 0, -851969, 4, 0, -917462, 13, 0, -917461, 14, 0, -917458, 13, 0, -917457, 14, 0, -917452, 13, 0, -917451, 14, 0, -917437, 5, 0, -917436, 4, 0, -917429, 5, 0, -786433, 4, 0, -851901, 5, 0, -851900, 4, 0, -851893, 5, 0, -720897, 4, 0, -786402, 13, 0, -786401, 14, 0, -786365, 5, 0, -786364, 4, 0, -786357, 5, 0, -655361, 4, 0, -720829, 5, 0, -720828, 4, 0, -720821, 5, 0, -589825, 4, 0, -655348, 13, 0, -655347, 14, 0, -655293, 5, 0, -655292, 4, 0, -655285, 5, 0, -524289, 4, 0, -589819, 13, 0, -589818, 14, 0, -589803, 13, 0, -589802, 14, 0, -589757, 5, 0, -589756, 4, 0, -589749, 5, 0, -458753, 4, 0, -524221, 5, 0, -524220, 4, 0, -524213, 5, 0, -393217, 4, 0, -458685, 5, 0, -458684, 4, 0, -458677, 5, 0, -327681, 4, 0, -393149, 5, 0, -393148, 4, 0, -393141, 5, 0, -262145, 4, 0, -327642, 13, 0, -327641, 14, 0, -327634, 13, 0, -327633, 14, 0, -327623, 13, 0, -327622, 14, 0, -327613, 5, 0, -327612, 4, 0, -327605, 5, 0, -196609, 4, 0, -262077, 5, 0, -262076, 4, 0, -262069, 5, 0, -131073, 4, 0, -196556, 13, 0, -196555, 14, 0, -196541, 5, 0, -196540, 4, 0, -196533, 5, 0, -65537, 4, 0, -131005, 5, 0, -131004, 4, 0, -130997, 5, 0, -1, 4, 0, -65520, 13, 0, -65519, 14, 0, -65515, 13, 0, -65514, 14, 0, -65511, 13, 0, -65510, 14, 0, -65505, 13, 0, -65504, 14, 0, -65469, 5, 0, -65468, 4, 0, -65461, 5, 0, 65535, 4, 0, 67, 5, 0, 68, 4, 0, 75, 5, 0, 131071, 4, 0, 65603, 5, 0, 65604, 4, 0, 65611, 5, 0, 196607, 4, 0, 131122, 12, 0, 131124, 11, 0, 131128, 12, 0, 131129, 11, 0, 131131, 12, 0, 131133, 11, 0, 131139, 5, 0, 131140, 4, 0, 131142, 12, 0, 131147, 5, 0, 262143, 4, 0, 196656, 11, 0, 196661, 12, 0, 196663, 11, 0, 196671, 12, 0, 196675, 5, 0, 196676, 4, 0, 196683, 5, 0, 327679, 4, 0, 262211, 5, 0, 262212, 4, 0, 262219, 5, 0, 393215, 4, 0, 327687, 13, 0, 327688, 14, 0, 327747, 5, 0, 327748, 4, 0, 327755, 5, 0, 458751, 4, 0, 393283, 5, 0, 393284, 4, 0, 393291, 5, 0, 524287, 4, 0, 458819, 5, 0, 458820, 4, 0, 458827, 5, 0, 589823, 4, 0, 524355, 5, 0, 524356, 4, 0, 524363, 5, 0, 655359, 4, 0, 589836, 9, 0, 589837, 9, 0, 589838, 9, 0, 589839, 10, 0, 589844, 10, 0, 589845, 10, 0, 589846, 10, 0, 589852, 9, 0, 589858, 10, 0, 589864, 9, 0, 589865, 9, 0, 589873, 10, 0, 589874, 10, 0, 589875, 10, 0, 589880, 9, 0, 589883, 9, 0, 589884, 9, 0, 589887, 9, 0, 589891, 5, 0, 589892, 4, 0, 589893, 9, 0, 589897, 10, 0, 589899, 5, 0, 720895, 3, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0, 655374, 0, 0, 655375, 0, 0, 655376, 0, 0, 655377, 0, 0, 655378, 0, 0, 655379, 0, 0, 655380, 0, 0, 655381, 0, 0, 655382, 0, 0, 655383, 0, 0, 655384, 0, 0, 655385, 0, 0, 655386, 0, 0, 655387, 0, 0, 655388, 0, 0, 655389, 0, 0, 655390, 0, 0, 655391, 0, 0, 655392, 0, 0, 655393, 0, 0, 655394, 0, 0, 655395, 0, 0, 655396, 0, 0, 655397, 0, 0, 655398, 0, 0, 655399, 0, 0, 655400, 0, 0, 655401, 0, 0, 655402, 0, 0, 655403, 0, 0, 655404, 0, 0, 655405, 0, 0, 655406, 0, 0, 655407, 0, 0, 655408, 0, 0, 655409, 0, 0, 655410, 0, 0, 655411, 0, 0, 655412, 0, 0, 655413, 0, 0, 655414, 0, 0, 655415, 0, 0, 655416, 0, 0, 655417, 0, 0, 655418, 0, 0, 655419, 0, 0, 655420, 0, 0, 655421, 0, 0, 655422, 0, 0, 655423, 0, 0, 655424, 0, 0, 655425, 0, 0, 655426, 0, 0, 655427, 3, 0, 655428, 3, 0, 655429, 14, 0, 655430, 14, 0, 655431, 14, 0, 655432, 14, 0, 655433, 14, 0, 655434, 14, 0, 655435, 3, 0, 786431, 3, 0, 720896, 3, 0, 720897, 3, 0, 720898, 3, 0, 720899, 3, 0, 720900, 3, 0, 720901, 3, 0, 720902, 3, 0, 720903, 3, 0, 720904, 3, 0, 720905, 3, 0, 720906, 3, 0, 720907, 3, 0, 720908, 3, 0, 720909, 3, 0, 720910, 3, 0, 720911, 3, 0, 720912, 3, 0, 720913, 3, 0, 720914, 3, 0, 720915, 3, 0, 720916, 3, 0, 720917, 3, 0, 720918, 3, 0, 720919, 3, 0, 720920, 3, 0, 720921, 3, 0, 720922, 3, 0, 720923, 3, 0, 720924, 3, 0, 720925, 3, 0, 720926, 3, 0, 720927, 3, 0, 720928, 3, 0, 720929, 3, 0, 720930, 3, 0, 720931, 3, 0, 720932, 3, 0, 720933, 3, 0, 720934, 3, 0, 720935, 3, 0, 720936, 3, 0, 720937, 3, 0, 720938, 3, 0, 720939, 3, 0, 720940, 3, 0, 720941, 3, 0, 720942, 3, 0, 720943, 3, 0, 720944, 3, 0, 720945, 3, 0, 720946, 3, 0, 720947, 3, 0, 720948, 3, 0, 720949, 3, 0, 720950, 3, 0, 720951, 3, 0, 720952, 3, 0, 720953, 3, 0, 720954, 3, 0, 720955, 3, 0, 720956, 3, 0, 720957, 3, 0, 720958, 3, 0, 720959, 3, 0, 720960, 3, 0, 720961, 3, 0, 720962, 3, 0, 720963, 3, 0, 720964, 3, 0, 720965, 3, 0, 720966, 3, 0, 720967, 3, 0, 720968, 3, 0, 720969, 3, 0, 720970, 3, 0, 720971, 3, 0 )
+
+[node name="Labels" type="Control" parent="."]
+margin_left = 64.0
+margin_top = 2.0
+margin_right = 104.0
+margin_bottom = 42.0
+theme = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Trampolines" type="Node2D" parent="."]
+position = Vector2( 64, 0 )
+
+[node name="Trampoline green" parent="Trampolines" instance=ExtResource( 6 )]
+position = Vector2( 288, 640 )
+
+[node name="Trampoline yellow" parent="Trampolines" instance=ExtResource( 9 )]
+position = Vector2( 512, 320 )
+
+[node name="Trampoline blue" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1088, -64 )
+
+[node name="Trampoline blue4" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 832, -640 )
+
+[node name="Trampoline yellow3" parent="Trampolines" instance=ExtResource( 9 )]
+position = Vector2( 384, -576 )
+
+[node name="Trampoline green2" parent="Trampolines" instance=ExtResource( 6 )]
+position = Vector2( 1408, -576 )
+
+[node name="Trampoline blue2" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1408, -64 )
+
+[node name="Trampoline yellow4" parent="Trampolines" instance=ExtResource( 9 )]
+position = Vector2( 832, -1152 )
+
+[node name="Trampoline blue3" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1216, -2048 )
+
+[node name="Trampoline blue5" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 832, -2048 )
+
+[node name="Trampoline yellow5" parent="Trampolines" instance=ExtResource( 9 )]
+position = Vector2( 448, -2048 )
+
+[node name="Trampoline green3" parent="Trampolines" instance=ExtResource( 6 )]
+position = Vector2( 640, -2688 )
+
+[node name="Trampoline blue6" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1216, -2624 )
+
+[node name="Trampoline blue7" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1536, -2624 )
+
+[node name="Trampoline blue8" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1984, -2432 )
+
+[node name="Trampoline red" parent="Trampolines" instance=ExtResource( 11 )]
+position = Vector2( 2368, -2304 )
+
+[node name="Trampoline red2" parent="Trampolines" instance=ExtResource( 11 )]
+position = Vector2( 2752, -1408 )
+
+[node name="Trampoline green4" parent="Trampolines" instance=ExtResource( 6 )]
+position = Vector2( 2176, -3328 )
+
+[node name="Trampoline blue9" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 2624, -3328 )
+
+[node name="Trampoline green5" parent="Trampolines" instance=ExtResource( 6 )]
+position = Vector2( 3072, -3200 )
+
+[node name="Trampoline yellow6" parent="Trampolines" instance=ExtResource( 9 )]
+position = Vector2( 3648, -3072 )
+
+[node name="Trampoline blue10" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1664, -64 )
+
+[node name="Trampoline green6" parent="Trampolines" instance=ExtResource( 6 )]
+position = Vector2( 1984, -768 )
+
+[node name="Trampoline green7" parent="Trampolines" instance=ExtResource( 6 )]
+position = Vector2( 2048, -64 )
+
+[node name="Trampoline green8" parent="Trampolines" instance=ExtResource( 6 )]
+position = Vector2( 2496, -320 )
+
+[node name="Trampoline blue11" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 3008, -320 )
+
+[node name="Trampoline green9" parent="Trampolines" instance=ExtResource( 6 )]
+position = Vector2( 3392, -192 )
+
+[node name="Trampoline yellow2" parent="Trampolines" instance=ExtResource( 9 )]
+position = Vector2( 3712, -320 )
+
+[node name="Trampoline blue12" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 3392, -896 )
+
+[node name="Trampoline blue13" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 2496, -960 )
+
+[node name="Trampoline blue14" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 3008, -896 )
+
+[node name="Trampoline blue15" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 2752, -896 )
+
+[node name="Trampoline blue16" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 4352, -2880 )
+
+[node name="Trampoline blue17" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1792, -3328 )
+
+[node name="Trampoline blue18" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1408, -3328 )
+
+[node name="Trampoline blue19" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 1024, -3328 )
+
+[node name="Trampoline blue20" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 640, -3328 )
+
+[node name="Trampoline blue21" parent="Trampolines" instance=ExtResource( 7 )]
+position = Vector2( 256, -3328 )
+
+[node name="Portal" parent="." instance=ExtResource( 4 )]
+position = Vector2( 4672, 512 )
+next_scene = ExtResource( 5 )
+
+[node name="Cat" parent="." instance=ExtResource( 2 )]
+position = Vector2( 152, 640 )
+
+[node name="Camera2D" parent="Cat" index="1"]
+limit_bottom = 720
+
+[node name="Dogs" type="Node2D" parent="."]
+position = Vector2( 0, 1 )
+
+[node name="Storks" type="Node2D" parent="."]
+position = Vector2( 0, 1 )
+
+[node name="Fish" type="Node2D" parent="."]
+position = Vector2( -40, -40 )
+
+[node name="Fish" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 288, 288 )
+
+[node name="Fish2" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 608, -96 )
+
+[node name="Fish3" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 672, -352 )
+
+[node name="Fish4" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 832, -544 )
+
+[node name="Fish5" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 992, -352 )
+
+[node name="Fish6" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1248, -224 )
+
+[node name="Fish9" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1216, -832 )
+
+[node name="Fish10" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1088, -960 )
+
+[node name="Fish11" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 896, -832 )
+
+[node name="Fish12" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 384, -928 )
+
+[node name="Fish13" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 448, -1184 )
+
+[node name="Fish14" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 640, -1312 )
+
+[node name="Fish15" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 896, -1408 )
+
+[node name="Fish16" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1056, -1608 )
+
+[node name="Fish17" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1280, -1600 )
+
+[node name="Fish19" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1472, -1696 )
+
+[node name="Fish20" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1472, -1888 )
+
+[node name="Fish21" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1472, -2080 )
+
+[node name="Fish22" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1472, -2272 )
+
+[node name="Fish23" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 448, -2336 )
+
+[node name="Fish24" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 448, -2592 )
+
+[node name="Fish7" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2400, -2848 )
+
+[node name="Fish8" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2400, -3040 )
+
+[node name="Fish18" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2400, -3232 )
+
+[node name="Fish25" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2432, -3520 )
+
+[node name="Fish26" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2624, -3584 )
+
+[node name="Fish27" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1600, -3488 )
+
+[node name="Fish28" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1216, -3488 )
+
+[node name="Fish29" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 832, -3496 )
+
+[node name="Fish30" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 448, -3488 )
+
+[node name="Fish31" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 288, -3424 )
+
+[node name="Fish32" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 224, -3424 )
+
+[node name="Fish33" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 224, -3488 )
+
+[node name="Fish34" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 288, -3488 )
+
+[node name="Fish35" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2848, -3488 )
+
+[node name="Fish36" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3008, -3392 )
+
+[node name="Fish37" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3248, -3464 )
+
+[node name="Fish38" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3440, -3488 )
+
+[node name="Fish39" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3568, -3304 )
+
+[node name="Fish40" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4192, -3432 )
+
+[node name="Fish43" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3784, -3400 )
+
+[node name="Fish44" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3984, -3576 )
+
+[node name="Fish41" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4296, -3264 )
+
+[node name="Fish42" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4408, -3048 )
+
+[node name="Fish45" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -2720 )
+
+[node name="Fish46" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -2464 )
+
+[node name="Fish47" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -2208 )
+
+[node name="Fish50" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -1952 )
+
+[node name="Fish49" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -1696 )
+
+[node name="Fish48" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -1440 )
+
+[node name="Fish53" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -1184 )
+
+[node name="Fish52" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -928 )
+
+[node name="Fish51" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -672 )
+
+[node name="Fish56" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -416 )
+
+[node name="Fish55" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, -160 )
+
+[node name="Fish54" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 4608, 96 )
+
+[node name="Fish57" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2200, -288 )
+
+[node name="Fish58" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2408, -440 )
+
+[node name="Fish59" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2872, -568 )
+
+[node name="Fish60" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3352, -424 )
+
+[node name="Fish61" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3816, -504 )
+
+[node name="Fish62" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3816, -760 )
+
+[node name="Fish63" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3696, -1016 )
+
+[node name="Fish64" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 3304, -1016 )
+
+[node name="Fish65" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2984, -1048 )
+
+[node name="Fish66" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2744, -1080 )
+
+[node name="Fish67" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2368, -1016 )
+
+[node name="Fish68" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2184, -952 )
+
+[node name="Fish69" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1912, -952 )
+
+[node name="Fish70" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1736, -1080 )
+
+[node name="Fish71" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1608, -952 )
+
+[node name="Fish72" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1504, -760 )
+
+[node name="Fish73" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1080, -2872 )
+
+[node name="Fish74" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1480, -2744 )
+
+[node name="Fish75" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 1928, -2664 )
+
+[node name="Fish76" parent="Fish" instance=ExtResource( 10 )]
+position = Vector2( 2328, -2528 )
+
+[node name="Trampoline red" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1536, -1344 )
+
+[editable path="Cat"]

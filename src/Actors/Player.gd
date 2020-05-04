@@ -20,7 +20,6 @@ func _on_PortalDetector_area_shape_entered(area_id: int, area: Portal, area_shap
 	if area != null:
 		set_physics_process(false)
 		player_animations.play("Teleport")
-		emit_signal("teleport_entered")
 
 func _physics_process(delta: float) -> void:
 	var direction: = get_direction()
@@ -86,3 +85,12 @@ func turn_right() -> void:
 func turn_left() -> void:
 	sprite.flip_h = false
 	sprite.position.x = 0
+
+
+func _on_FakePortal_fake_teleport(destination: Vector2) -> void:
+	yield(player_animations,"animation_finished")
+	_velocity = Vector2(0,0)
+	self.transform = Transform2D(0, destination)
+	player_animations.play_backwards("Teleport")
+	yield(player_animations,"animation_finished")
+	set_physics_process(true)

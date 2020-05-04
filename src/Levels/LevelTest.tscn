@@ -1,11 +1,14 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://assets/environment.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Cat.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Theme.tres" type="Theme" id=3]
 [ext_resource path="res://src/Objects/Trampoline yellow.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/Actors/Stork.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/Objects/UserInterface/EndScreen.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/Objects/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -372,6 +375,15 @@ position = Vector2( 64, 0 )
 [node name="Trampoline yellow" parent="Trampolines" instance=ExtResource( 4 )]
 position = Vector2( 568, 640 )
 
+[node name="FakePortal" parent="." instance=ExtResource( 6 )]
+position = Vector2( 864, 512 )
+is_fake = true
+fake_teleport_destination = Vector2( 184, 600 )
+
+[node name="Portal" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1544, 512 )
+next_scene = ExtResource( 7 )
+
 [node name="Cat" parent="." instance=ExtResource( 2 )]
 position = Vector2( 184, 640 )
 
@@ -386,5 +398,6 @@ position = Vector2( 64, 0 )
 
 [node name="Stork" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1176, 88 )
+[connection signal="fake_teleport" from="FakePortal" to="Cat" method="_on_FakePortal_fake_teleport"]
 
 [editable path="Cat"]

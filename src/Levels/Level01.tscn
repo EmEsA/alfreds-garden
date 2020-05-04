@@ -7,8 +7,9 @@
 [ext_resource path="res://src/Objects/Trampoline blue.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Objects/Trampoline green.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/Objects/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Levels/Level02.tscn" type="PackedScene" id=9]
+
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
