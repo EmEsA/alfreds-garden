@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/Theme.tres" type="Theme" id=1]
+[ext_resource path="res://src/UserInterface/RetryButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/UserInterface/QuitButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/UserInterface/UserInterface.gd" type="Script" id=4]
+[ext_resource path="res://src/UserInterface/MuteButton.tscn" type="PackedScene" id=5]
+
+[node name="UserInterface" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -240.0
+margin_top = 32.0
+margin_right = -67.0
+margin_bottom = 75.0
+text = "Score: %s"
+
+[node name="PauseOverlay" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.439216 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="PauseOverlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -68.0
+margin_top = -96.0
+margin_right = 68.0
+margin_bottom = -53.0
+text = "Paused"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseMenu" type="VBoxContainer" parent="PauseOverlay"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -122.0
+margin_top = -45.0
+margin_right = 122.0
+margin_bottom = 45.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SoundButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 5 )]
+margin_right = 244.0
+margin_bottom = 43.0
+
+[node name="Retrybutton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 2 )]
+margin_top = 47.0
+margin_right = 244.0
+margin_bottom = 90.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="QuitButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 3 )]
+margin_top = 94.0
+margin_right = 244.0
+margin_bottom = 137.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
