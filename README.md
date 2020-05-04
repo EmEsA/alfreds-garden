@@ -5,3 +5,8 @@ Alfred's Garden is a simple platform game creaded using Godot engine. It contain
 # Running
 
 Navigate to /build and choose a compilation for your system
+
+# Screens
+
+![ScreenShot](/screens/menu.jpg?raw=true "Menu")
+![ScreenShot](/screens/game.jpg?raw=true "Game")
