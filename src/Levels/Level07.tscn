@@ -7,7 +7,7 @@
 [ext_resource path="res://src/Levels/Level08.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Objects/Trampoline green.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Actors/Stork.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/Objects/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Objects/Trampoline blue.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Objects/Trampoline red.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/Actors/Dog red.tscn" type="PackedScene" id=11]

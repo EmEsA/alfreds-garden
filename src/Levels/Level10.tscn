@@ -4,10 +4,10 @@
 [ext_resource path="res://src/Actors/Cat.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Theme.tres" type="Theme" id=3]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=4]
-[ext_resource path="res://src/Objects/UserInterface/EndScreen.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/UserInterface/EndScreen.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Actors/Dog blue.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Actors/Dog green.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/Objects/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Actors/Dog yellow.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Objects/Trampoline green.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/Objects/Trampoline blue.tscn" type="PackedScene" id=11]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/Objects/Trampoline red.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/Actors/Stork.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/Objects/Fish.tscn" type="PackedScene" id=15]
+
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )

@@ -7,7 +7,7 @@
 [ext_resource path="res://src/Actors/Dog red.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Objects/Trampoline blue.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Objects/Trampoline red.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/Objects/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Objects/Trampoline green.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Actors/Dog green.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/Objects/Trampoline yellow.tscn" type="PackedScene" id=11]
@@ -446,6 +446,7 @@ next_scene = ExtResource( 14 )
 position = Vector2( 2824, -960 )
 
 [node name="Camera2D" parent="Cat" index="1"]
+limit_right = 6016
 limit_bottom = 720
 
 [node name="Dogs" type="Node2D" parent="."]

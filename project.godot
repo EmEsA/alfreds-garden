@@ -39,7 +39,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Alfred's Garden 1.0.0"
-run/main_scene="res://src/Objects/UserInterface/MainScreen.tscn"
+run/main_scene="res://src/UserInterface/MainScreen.tscn"
 boot_splash/bg_color=Color( 0.643137, 0.909804, 0.964706, 1 )
 config/icon="res://icon.png"
 config/windows_native_icon="res://icon.ico"

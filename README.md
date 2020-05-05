@@ -2,9 +2,9 @@
 
 Alfred's Garden is a simple platform game creaded using Godot engine. It contains no violence and is suitble for players of any age.
 
-# Running
+# Download
 
-Navigate to /build and choose a compilation for your system
+visit https://emesa.itch.io/alfreds-garden to download builds
 
 # Screens
 

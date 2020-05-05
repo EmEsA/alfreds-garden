@@ -4,8 +4,9 @@
 [ext_resource path="res://src/Actors/Cat.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/Theme.tres" type="Theme" id=3]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=4]
-[ext_resource path="res://src/Objects/UserInterface/EndScreen.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/Objects/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/UserInterface/EndScreen.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+
 
 
 [sub_resource type="ConvexPolygonShape2D" id=1]

@@ -7,7 +7,7 @@
 [ext_resource path="res://src/Objects/Fish.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Objects/Trampoline blue.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Objects/Trampoline yellow.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/Objects/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Levels/Level03.tscn" type="PackedScene" id=10]
 
@@ -424,6 +424,7 @@ position = Vector2( 2288, -1088 )
 position = Vector2( 336, 640 )
 
 [node name="Camera2D" parent="Cat" index="1"]
+limit_right = 3840
 limit_bottom = 720
 
 [node name="Fish2" type="Node2D" parent="."]

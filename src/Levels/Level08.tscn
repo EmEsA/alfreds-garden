@@ -7,7 +7,7 @@
 [ext_resource path="res://src/Levels/Level09.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Objects/Trampoline green.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/Objects/Trampoline blue.tscn" type="PackedScene" id=7]
-[ext_resource path="res://src/Objects/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Objects/Trampoline yellow.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Objects/Fish.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/Objects/Trampoline red.tscn" type="PackedScene" id=11]
@@ -490,6 +490,9 @@ position = Vector2( 640, -3328 )
 [node name="Trampoline blue21" parent="Trampolines" instance=ExtResource( 7 )]
 position = Vector2( 256, -3328 )
 
+[node name="Trampoline red3" parent="Trampolines" instance=ExtResource( 11 )]
+position = Vector2( 1472, -1344 )
+
 [node name="Portal" parent="." instance=ExtResource( 4 )]
 position = Vector2( 4672, 512 )
 next_scene = ExtResource( 5 )
@@ -507,7 +510,7 @@ position = Vector2( 0, 1 )
 position = Vector2( 0, 1 )
 
 [node name="Fish" type="Node2D" parent="."]
-position = Vector2( -40, -40 )
+position = Vector2( 64, 0 )
 
 [node name="Fish" parent="Fish" instance=ExtResource( 10 )]
 position = Vector2( 288, 288 )
@@ -678,40 +681,40 @@ position = Vector2( 4608, -160 )
 position = Vector2( 4608, 96 )
 
 [node name="Fish57" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 2200, -288 )
+position = Vector2( 2200, -328 )
 
 [node name="Fish58" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 2408, -440 )
+position = Vector2( 2416, -504 )
 
 [node name="Fish59" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 2872, -568 )
+position = Vector2( 2776, -712 )
 
 [node name="Fish60" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 3352, -424 )
+position = Vector2( 3240, -448 )
 
 [node name="Fish61" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 3816, -504 )
+position = Vector2( 3712, -544 )
 
 [node name="Fish62" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 3816, -760 )
+position = Vector2( 3816, -776 )
 
 [node name="Fish63" parent="Fish" instance=ExtResource( 10 )]
 position = Vector2( 3696, -1016 )
 
 [node name="Fish64" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 3304, -1016 )
+position = Vector2( 3200, -1088 )
 
 [node name="Fish65" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 2984, -1048 )
+position = Vector2( 2888, -1088 )
 
 [node name="Fish66" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 2744, -1080 )
+position = Vector2( 2632, -1144 )
 
 [node name="Fish67" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 2368, -1016 )
+position = Vector2( 2320, -1096 )
 
 [node name="Fish68" parent="Fish" instance=ExtResource( 10 )]
-position = Vector2( 2184, -952 )
+position = Vector2( 2128, -976 )
 
 [node name="Fish69" parent="Fish" instance=ExtResource( 10 )]
 position = Vector2( 1912, -952 )
@@ -736,8 +739,5 @@ position = Vector2( 1928, -2664 )
 
 [node name="Fish76" parent="Fish" instance=ExtResource( 10 )]
 position = Vector2( 2328, -2528 )
-
-[node name="Trampoline red" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1536, -1344 )
 
 [editable path="Cat"]
