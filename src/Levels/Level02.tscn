@@ -11,7 +11,6 @@
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Levels/Level03.tscn" type="PackedScene" id=10]
 
-
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 
@@ -340,10 +339,6 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 layer = 100
 
 [node name="UserInterface" parent="UserInterface" instance=ExtResource( 8 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 1280.0
-margin_bottom = 720.0
 
 [node name="Labels" type="Control" parent="."]
 margin_left = 64.0
@@ -369,8 +364,8 @@ __meta__ = {
 layer = -1
 
 [node name="ColorRect" type="ColorRect" parent="Background"]
-margin_right = 1280.0
-margin_bottom = 720.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 color = Color( 0.643137, 0.909804, 0.964706, 1 )
 __meta__ = {
 "_edit_use_anchors_": false

@@ -1,11 +1,20 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/Theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/UserInterface/RetryButton.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/UserInterface/QuitButton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/UserInterface/UserInterface.gd" type="Script" id=4]
 [ext_resource path="res://src/UserInterface/MuteButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/left_pressed.png" type="Texture" id=6]
+[ext_resource path="res://assets/left.png" type="Texture" id=7]
+[ext_resource path="res://assets/pause_pressed.png" type="Texture" id=8]
+[ext_resource path="res://assets/pause.png" type="Texture" id=9]
 
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 60, 60 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 65, 25 )
 
 [node name="UserInterface" type="Control"]
 pause_mode = 2
@@ -20,11 +29,75 @@ __meta__ = {
 [node name="Score" type="Label" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -285.113
-margin_top = 37.3074
-margin_right = -112.113
-margin_bottom = 80.3074
+margin_left = -288.0
+margin_top = 16.0
+margin_right = -115.0
+margin_bottom = 59.0
 text = "Score: %s"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftControls" type="Control" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -720.0
+margin_right = 1280.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="left" type="TouchScreenButton" parent="LeftControls"]
+position = Vector2( 16, 576 )
+normal = ExtResource( 7 )
+pressed = ExtResource( 6 )
+shape = SubResource( 1 )
+action = "move_left"
+visibility_mode = 1
+
+[node name="right" type="TouchScreenButton" parent="LeftControls"]
+position = Vector2( 320, 704 )
+rotation = 3.14159
+normal = ExtResource( 7 )
+pressed = ExtResource( 6 )
+shape = SubResource( 1 )
+action = "move_right"
+visibility_mode = 1
+
+[node name="RightControls" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1280.0
+margin_top = -720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="up" type="TouchScreenButton" parent="RightControls"]
+position = Vector2( 1264, 576 )
+rotation = 1.5708
+normal = ExtResource( 7 )
+pressed = ExtResource( 6 )
+shape = SubResource( 1 )
+action = "jump"
+visibility_mode = 1
+
+[node name="UpControls" type="Control" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pause" type="TouchScreenButton" parent="UpControls"]
+position = Vector2( 16, 16 )
+normal = ExtResource( 9 )
+pressed = ExtResource( 8 )
+shape = SubResource( 2 )
+action = "pause"
+visibility_mode = 1
 
 [node name="PauseOverlay" type="ColorRect" parent="."]
 visible = false
