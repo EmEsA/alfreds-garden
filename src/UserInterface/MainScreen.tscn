@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://assets/environment.png" type="Texture" id=1]
 [ext_resource path="res://assets/cat.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://src/UserInterface/StartButton.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/UserInterface/QuitButton.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/UserInterface/MuteButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/UserInterface/MainScreen.gd" type="Script" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -340,6 +341,7 @@ font_data = ExtResource( 3 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 4 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -387,19 +389,26 @@ margin_bottom = 43.0
 text = "Start"
 next_scene_path = "res://src/Levels/Level01.tscn"
 
-[node name="ChangeSceneButton2" parent="ColorRect/Menu" instance=ExtResource( 7 )]
+[node name="LevelSelectButton" parent="ColorRect/Menu" instance=ExtResource( 5 )]
 margin_top = 47.0
 margin_right = 244.0
 margin_bottom = 90.0
+text = "Select level"
+next_scene_path = "res://src/UserInterface/LevelSelect.tscn"
 
-[node name="QuitButton" parent="ColorRect/Menu" instance=ExtResource( 6 )]
+[node name="SoundButton" parent="ColorRect/Menu" instance=ExtResource( 7 )]
 margin_top = 94.0
 margin_right = 244.0
 margin_bottom = 137.0
+
+[node name="QuitButton" parent="ColorRect/Menu" instance=ExtResource( 6 )]
+margin_top = 141.0
+margin_right = 244.0
+margin_bottom = 184.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="ColorRect"]
+[node name="Title" type="Label" parent="ColorRect"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -411,6 +420,21 @@ margin_bottom = -53.0
 custom_fonts/font = SubResource( 13 )
 text = "Alfred's Garden"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HighestScore" type="Label" parent="ColorRect"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 200.0
+margin_top = -336.0
+margin_right = 608.0
+margin_bottom = -293.0
+text = "Highest score: %s"
 __meta__ = {
 "_edit_use_anchors_": false
 }

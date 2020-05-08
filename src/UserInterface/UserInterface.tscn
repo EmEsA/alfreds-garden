@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://src/Theme.tres" type="Theme" id=1]
 [ext_resource path="res://src/UserInterface/RetryButton.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/left.png" type="Texture" id=7]
 [ext_resource path="res://assets/pause_pressed.png" type="Texture" id=8]
 [ext_resource path="res://assets/pause.png" type="Texture" id=9]
+[ext_resource path="res://src/UserInterface/StartButton.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 60, 60 )
@@ -135,10 +136,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SoundButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 5 )]
-margin_right = 244.0
-margin_bottom = 43.0
-
 [node name="Retrybutton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 2 )]
 margin_top = 47.0
 margin_right = 244.0
@@ -146,9 +143,20 @@ margin_bottom = 90.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="QuitButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 3 )]
+[node name="SoundButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 5 )]
+margin_right = 244.0
+margin_bottom = 43.0
+
+[node name="MainMenuButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 10 )]
 margin_top = 94.0
 margin_right = 244.0
 margin_bottom = 137.0
+text = "Main menu"
+next_scene_path = "res://src/UserInterface/MainScreen.tscn"
+
+[node name="QuitButton" parent="PauseOverlay/PauseMenu" instance=ExtResource( 3 )]
+margin_top = 141.0
+margin_right = 244.0
+margin_bottom = 184.0
 size_flags_horizontal = 3
 size_flags_vertical = 3

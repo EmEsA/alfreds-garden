@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://assets/environment.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Cat.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://src/UserInterface/UserInterface.tscn" type="PackedScene" id=8]
 [ext_resource path="res://src/Objects/Portal.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Levels/Level03.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/Levels/Level.gd" type="Script" id=11]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -334,6 +335,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 14/z_index = 0
 
 [node name="Level02" type="Node2D"]
+script = ExtResource( 11 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 layer = 100

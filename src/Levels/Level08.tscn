@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://assets/environment.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Cat.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://src/Objects/Trampoline yellow.tscn" type="PackedScene" id=9]
 [ext_resource path="res://src/Objects/Fish.tscn" type="PackedScene" id=10]
 [ext_resource path="res://src/Objects/Trampoline red.tscn" type="PackedScene" id=11]
+[ext_resource path="res://src/Levels/Level.gd" type="Script" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -335,6 +336,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 14/z_index = 0
 
 [node name="Level08" type="Node2D"]
+script = ExtResource( 12 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 layer = 100

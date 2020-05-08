@@ -8,14 +8,16 @@ export var score: = 100
 
 var has_been_picked: = false
 
+
 func _on_body_entered(body: Node) -> void:
 	if !has_been_picked:
 		picked()
 
+
 func picked() -> void:
 	has_been_picked = true
-	Data.score += score
-	if !Data.muted:
+	Global.score += score
+	if !Global.muted:
 		munch.play()
 	anim_player.play("Cought")
 	yield(anim_player,"animation_finished")

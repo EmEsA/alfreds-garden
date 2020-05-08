@@ -11,6 +11,7 @@ onready var sprite: AnimatedSprite = $AnimatedSprite
 onready var teleport_sound: AudioStreamPlayer = $TeleportSound
 onready var black_overlay: ColorRect = $CanvasLayer/ColorRect
 
+
 func _ready() -> void:
 	sprite.play()
 	if !is_fake:
@@ -23,17 +24,19 @@ func _ready() -> void:
 
 export var next_scene: PackedScene
 
+
 func _on_shape_entered(area_id: int, area: Area2D, area_shape: int, self_shape: int) -> void:
 	if area.name == "PortalDetector":
 		teleport()
 
+
 func teleport() -> void:
-	if !Data.muted:
+	if !Global.muted:
 		teleport_sound.play()
 	if !is_fake:
 		anim_player.play("LevelTransition")
 		yield(anim_player, "animation_finished")
-		if !Data.muted:
+		if !Global.muted:
 			yield(teleport_sound,"finished")
 		get_tree().change_scene_to(next_scene)
 	else:

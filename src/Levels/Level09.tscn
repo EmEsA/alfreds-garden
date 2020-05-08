@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://assets/environment.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Cat.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://src/Actors/Dog yellow.tscn" type="PackedScene" id=13]
 [ext_resource path="res://src/Objects/Fish.tscn" type="PackedScene" id=14]
 [ext_resource path="res://src/Levels/Level10.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/Levels/Level.gd" type="Script" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
@@ -339,6 +340,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
 14/z_index = 0
 
 [node name="Level09" type="Node2D"]
+script = ExtResource( 16 )
 
 [node name="UserInterface" type="CanvasLayer" parent="."]
 layer = 100
